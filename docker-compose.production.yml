@@ -8,24 +8,24 @@ volumes:
 services:
   db:
     image: postgres:13.10
-    env_file: .env.example
+    env_file: .env
     volumes:
       - pg_data:/var/lib/postgresql/data
   backend:
     image: vanzep/kittygram_backend
-    env_file: .env.example
+    env_file: .env
     volumes:
       - static:/static
       - media:/media
   frontend:
-    env_file: .env.example
     image: vanzep/kittygram_frontend
+    env_file: .env
     command: cp -r /app/build/. /static/
     volumes:
       - static:/static
   gateway:
     image: vanzep/kittygram_gateway
-    env_file: .env.example
+    env_file: .env
     ports:
       - 9000:80
     volumes:
