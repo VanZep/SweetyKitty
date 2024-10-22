@@ -27,7 +27,7 @@ dockerhub_username: ваш_логин_на_докерхабе
 
 ![example workflow](https://github.com/VanZep/kittygram_final/actions/workflows/Run%20deploy/main.yml/badge.svg)
 
-![example workflow](https://github.com/VanZep/kittygram_final/actions/workflows/Run%20main/badge.svg)
+![Build Status](https://github.com/VanZep/kittygram_final/actions/workflows/Run%20main/badge.svg)
 
 ![Build Status](https://travis-ci.org/xdan/jodit.svg?branch=master)(https://travis-ci.org/xdan/jodit)
 
