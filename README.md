@@ -25,7 +25,7 @@ dockerhub_username: ваш_логин_на_докерхабе
 - Пуш в ветку main запускает тестирование и деплой Kittygram, а после успешного деплоя вам приходит сообщение в телеграм.
 - В корне проекта есть файл `kittygram_workflow.yml`.
 
-![example workflow](https://github.com/VanZep/kittygram_final/actions/workflows/%20deploy/main.yml/badge.svg)
+![example workflow](https://github.com/VanZep/kittygram_final/actions/workflows/Run%20deploy/main.yml/badge.svg)
 
 ![example workflow](https://github.com/VanZep/kittygram_final/actions/workflows/%20deploy/badge.svg)
 
