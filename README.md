@@ -27,6 +27,6 @@ dockerhub_username: ваш_логин_на_докерхабе
 
 ![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 
-![Build Status](https://travis-ci.org/xdan/jodit.svg?branch=master)](https://travis-ci.org/xdan/jodit)
+![Build Status](https://travis-ci.org/xdan/jodit.svg?branch=master)(https://travis-ci.org/xdan/jodit)
 
-![Build Status](https://github.com/xdan/jodit/workflows/Run%20tests/badge.svg)](https://github.com/xdan/jodit/actions/workflows/tests.yml)
+![Build Status](https://github.com/xdan/jodit/workflows/Run%20tests/badge.svg)(https://github.com/xdan/jodit/actions/workflows/tests.yml)
