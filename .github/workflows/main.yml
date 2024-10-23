@@ -10,6 +10,7 @@ jobs:
     env:
       SECRET_KEY: ${{ secrets.DJANGO_SECRET_KEY }}
       ALLOWED_HOSTS: ${{ secrets.DJANGO_ALLOWED_HOSTS }}
+      DEBUG: ${{ secrets.DJANGO_DEBUG }}
     services:
       postgres:
         image: postgres:13.10
