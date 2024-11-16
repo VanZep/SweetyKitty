@@ -144,7 +144,7 @@ sudo docker compose -f docker-compose.production.yml exec backend cp -r /app/col
 docker compose -f docker-compose.production.yml exec backend python manage.py createsuperuser
 ```
 - *Теперь можете войти на сайт, как пользователь, которого создали.*
-#### Проект будет доступен по адресу - публичный_ip_вашего_удалённого_сервера
+#### Проект будет доступен по адресу - ***публичный_ip_вашего_удалённого_сервера***
 
 #### Автор:
 ***VanZep***
