@@ -57,29 +57,46 @@ sudo systemctl status docker
 #### 2. Склонируйте проект себе на компьютер:
 - *В терминале выполните команду из той директории, в которой хотите разместить проект:*
 ```
-git clone git@github.com:VanZep/kittygram_final.git
+git clone git@github.com:VanZep/Kittygram.git
 ```
 - *Перейдите в корневую директорию проекта:*
 ```
-cd kittygram_final
+cd Kittygram
 ```
-
-#### 3. Разверните проект на своём компьютере:
-- *В терминале, из директории kittygram_final, выполните команду:*
+#### 3. В корневой директории проекта создайте файл .env:
+```
+touch .env
+```
+#### 4. Наполните его данными по аналогии с файлом .env.example:
+```
+nano .env
+```
+```
+POSTGRES_DB=название_бд
+POSTGRES_USER=юзернейм_бд
+POSTGRES_PASSWORD=пароль_бд
+DB_NAME=имя_бд
+DB_HOST=хост_бд (название контейнера БД)
+DB_PORT=порт_бд
+SECRET_KEY=секретный_ключ_джанго
+DEBUG=флаг_отладки (True или False)
+ALLOWED_HOSTS=адрес1 адрес2 домен1
+```
+#### 5. Разверните проект на своём компьютере:
+- *В терминале, из директории Kittygram, выполните команду:*
 ```
 docker compose up
 ```
-- *В новом окне терминала выполните три команды по очереди:*
- ```
+- *В новом окне терминала выполните команду:*
+```
 docker compose exec backend python manage.py migrate
-docker compose exec backend python manage.py collectstatic
-docker compose exec backend cp -r /app/collected_static/. /static/static/
 ```
 - *Можете создать пользователя superuser, чтобы войти на сайт:*
 ```
 docker compose exec backend python manage.py createsuperuser
 ```
-- *Теперь можете войти на сайт, как пользователь, которого создали.*
+
+- **Теперь можете войти на сайт, как пользователь, которого создали.**
 
 #### Проект будет доступен по адресу - [http://localhost:9000/](http://localhost:9000/)
 ---
