@@ -15,7 +15,7 @@ Python 3.9, Django 3.2, djangorestframework 3.12, gunicorn 20.1, Nginx 1.18
 В проекте Kittygram есть две версии:
 - Обычная версия используется, чтобы развернуть проект на своём компьютере. В ней образы контейнеров создаются в процессе разворота проекта.
 - Продакшн-версия используется, чтобы развернуть проект на удаленном сервере. В ней используются готовые образы контейнеров с dockerhub.
-- Проект доступен по адресу - [http://kyttygram.sytes.net/](http://kyttygram.sytes.net/)
+<!--- Проект доступен по адресу - [http://kyttygram.sytes.net/](http://kyttygram.sytes.net/)-->
 <!--- Статус последнего workflow: ![workflow status](https://github.com/VanZep/kittygram_final/actions/workflows/main.yml/badge.svg)-->
 ---
 ### Инструкция запуска проекта на своём компьютере
