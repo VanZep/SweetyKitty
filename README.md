@@ -1,8 +1,8 @@
-# Проект Kittygram
+# Проект SweetyKitty
 
 ## Описание
 <p>
-  Проект Kittygram создан для любителей и владельцев кошек. Пользователи могут добавлять своих любимцев с именем и годом рождения. А также цвет окраса, фото и создавать, и присваивать достижения своим котам.
+  Проект SweetyKitty создан для любителей и владельцев кошек. Пользователи могут добавлять своих любимцев с именем и годом рождения. А также цвет окраса, фото и создавать, и присваивать достижения своим котам.
 </p>
 <p>
   Настроен запуск проекта в контейнерах Docker. Настроено автоматическое тестирование и деплой этого проекта на удалённый сервер с обновлением образов на DockerHub при помощи сервиса GitHub Actions. Также написан подробный файл README по развороту проекта.
@@ -12,11 +12,11 @@
 Python 3.9, Django 3.2, djangorestframework 3.12, gunicorn 20.1, Nginx 1.18
 
 ## Техническое описание
-В проекте Kittygram есть две версии:
+В проекте SweetyKitty есть две версии:
 - Обычная версия используется, чтобы развернуть проект на своём компьютере. В ней образы контейнеров создаются в процессе разворота проекта.
 - Продакшн-версия используется, чтобы развернуть проект на удаленном сервере. В ней используются готовые образы контейнеров с dockerhub.
-- Проект доступен по адресу - [http://kittybook.sytes.net/](http://kittybook.sytes.net/)
-- Статус последнего workflow: ![workflow status](https://github.com/VanZep/Kittygram/actions/workflows/main.yml/badge.svg)
+<!--- Проект доступен по адресу - [http://kittybook.sytes.net/](http://kittybook.sytes.net/)
+- Статус последнего workflow: ![workflow status](https://github.com/VanZep/SweetyKitty/actions/workflows/main.yml/badge.svg)-->
 ---
 ### Инструкция запуска проекта на своём компьютере
 #### 1. Установите Docker, если его нет:
@@ -57,11 +57,11 @@ sudo systemctl status docker
 #### 2. Склонируйте проект себе на компьютер:
 - *В терминале выполните команду из той директории, в которой хотите разместить проект:*
 ```
-git clone git@github.com:VanZep/Kittygram.git
+git clone git@github.com:VanZep/SweetyKitty.git
 ```
 - *Перейдите в корневую директорию проекта:*
 ```
-cd Kittygram
+cd SweetyKitty
 ```
 #### 3. В корневой директории проекта создайте файл .env:
 ```
@@ -83,7 +83,7 @@ DEBUG=флаг_отладки (True или False)
 ALLOWED_HOSTS=адрес1 адрес2 домен1
 ```
 #### 5. Разверните проект на своём компьютере:
-- *В терминале, из директории Kittygram, выполните команду:*
+- *В терминале, из директории SweetyKitty, выполните команду:*
 ```
 docker compose up
 ```
@@ -114,15 +114,15 @@ curl -fSL https://get.docker.com -o get-docker.sh
 sudo sh ./get-docker.sh
 sudo apt install docker-compose-plugin
 ```
-#### 4. Из корневой папки проекта kittygram_final на своём компьютере скопируйте файл .env в корневую папку проекта kittygram на удалённом сервере. Для этого можно воспользоваться командой в терминале, например:
+#### 4. Из корневой папки проекта SweetyKitty на своём компьютере скопируйте файл .env в корневую папку проекта sweetykitty на удалённом сервере. Для этого можно воспользоваться командой в терминале, например:
 ```
 scp -i путь_до_файла_с_SSH_ключом/название_файла_закрытого_SSH-ключа .env \
-  username@server_ip:/home/username/kittygram/.env
+  username@server_ip:/home/username/sweetykitty/.env
 ```
 #### 5. Также скопируйте файл docker-compose.production.yml:
 ```
 scp -i путь_до_файла_с_SSH_ключом/название_файла_закрытого_SSH-ключа docker-compose.production.yml \
-  username@server_ip:/home/username/kittygram/docker-compose.production.yml
+  username@server_ip:/home/username/sweetykitty/docker-compose.production.yml
 ```
 #### 6. Установите Nginx на удалённом сервере, выполнив команду из любой директории:
 ```
@@ -151,7 +151,7 @@ server {
 ```
 sudo systemctl start nginx
 ```
-#### 8. Из корневой папки проекта kittygram запустите Docker Compose в режиме демона командой:
+#### 8. Из корневой папки проекта sweetykitty запустите Docker Compose в режиме демона командой:
 ```
 sudo docker compose -f docker-compose.production.yml up -d
 ```
