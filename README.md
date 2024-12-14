@@ -87,7 +87,7 @@ ALLOWED_HOSTS=адрес1 адрес2 домен1
 ```
 docker compose up
 ```
-- *В новом окне терминала выполните команду:*
+- *В новом окне терминала перейдите в корневую директорию SweetyKitty и выполните команду:*
 ```
 docker compose exec backend python manage.py migrate
 ```
